@@ -143,12 +143,8 @@ if st.session_state.db:
                     llm=llm_email
                 )
 
-                # Prepare email content based on merchant data
-                email_content = ""
-                for merchant in st.session_state.merchant_data:
-                    merchant_name = merchant['name']  # Assuming 'name' is the key for merchant's name
                     
-                    email_content += f"""
+                    email_content = f"""
 Subject: Boost Customer Traffic for {merchant_name} – No Upfront Cost
 
 Dear {merchant_name},

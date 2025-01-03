@@ -143,8 +143,10 @@ if st.session_state.db:
                     llm=llm_email
                 )
 
+                # Prepare email content based on merchant data
+                email_content = ""
                     
-                    email_content = f"""
+                    email_content += f"""
 Subject: Boost Customer Traffic for {merchant_name} – No Upfront Cost
 
 Dear {merchant_name},

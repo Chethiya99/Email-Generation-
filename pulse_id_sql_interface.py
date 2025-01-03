@@ -144,14 +144,14 @@ if st.session_state.db:
                 )
 
                 # Prepare email content based on merchant data
-                email_content = ""
+                #email_content = ""
                     
-                    email_content += f"""
-Subject: Boost Customer Traffic for {merchant_name} – No Upfront Cost
+                    email_content = f""" Generate professional marketing emails for the following merchants and their emails to pitch them: {st.session_state.merchant_data} using below format
+Subject: Boost Customer Traffic for 'merchant_name' – No Upfront Cost
 
-Dear {merchant_name},
+Dear 'merchant_name',
 
-Thank you for reaching out! We’re excited about the opportunity to support {merchant_name} in driving customer traffic and enhancing engagement through our Pulse iD Marketplace.
+Thank you for reaching out! We’re excited about the opportunity to support 'merchant_name' in driving customer traffic and enhancing engagement through our Pulse iD Marketplace.
 
 Here’s how our program can benefit your coffee shop:
 - Increased Customer Footfall: Targeted campaigns bring high-value customers to your location.

@@ -350,30 +350,31 @@ if st.session_state.db:
 
                 # Email generation task using extracted results
                 task = Task(
-                    description=f"Generate professional marketing emails for the following merchants and their emails to pitch them: {st.session_state.merchant_data}.use below format
-                    Subject: Boost Customer Traffic for 'merchant_name' – No Upfront Cost
+                    description=f"""Generate professional marketing emails for the following merchants and their emails to pitch them: {st.session_state.merchant_data}.use below format
+                                    Subject: Boost Customer Traffic for 'merchant_name' – No Upfront Cost
 
-                    Dear 'merchant_name',
+                                    Dear 'merchant_name',
 
-                    Thank you for reaching out! We’re excited about the opportunity to support 'merchant_name' in driving customer traffic and enhancing engagement through our Pulse iD Marketplace.
+                                    Thank you for reaching out! We’re excited about the opportunity to support 'merchant_name' in driving customer traffic and enhancing engagement through our Pulse iD Marketplace.
 
-                    Here’s how our program can benefit your coffee shop:
-                    - Increased Customer Footfall: Targeted campaigns bring high-value customers to your location.
-                    - No Upfront Costs: You only fund the discount or offer provided—no hidden fees, no surprises.
-                    - Flexibility: You’re in control of your offers and can adjust or opt out anytime.
+                                    Here’s how our program can benefit your coffee shop:
+                                    - Increased Customer Footfall: Targeted campaigns bring high-value customers to your location.
+                                    - No Upfront Costs: You only fund the discount or offer provided—no hidden fees, no surprises.
+                                    - Flexibility: You’re in control of your offers and can adjust or opt out anytime.
 
-                    To give you an example, XYZ Coffee in Dubai partnered with us to offer a 15% discount through card-linked offers. Over three months, they experienced:
-                    - 30% growth in sales.
-                    - 20% increase in repeat customers.
-                    - Improved brand visibility through promotions on enterprise platforms.
-                    (Read more: XYZ Coffee Case Study)
+                                     To give you an example, XYZ Coffee in Dubai partnered with us to offer a 15% discount through card-linked offers. Over three months, they experienced:
+                                    - 30% growth in sales.
+                                    - 20% increase in repeat customers.
+                                    - Improved brand visibility through promotions on enterprise platforms.
+                                    (Read more: XYZ Coffee Case Study)
 
-                    Next Steps:
-                    Complete our quick onboarding form here: [CTA Link – Merchant Onboarding Form]. This will help us set up your account and customize your campaign.
+                                    Next Steps:
+                                    Complete our quick onboarding form here: [CTA Link – Merchant Onboarding Form]. This will help us set up your account and customize your campaign.
 
-                    If you have any questions or would like to explore offer options, feel free to reach out—I’d be happy to assist!
+                                    If you have any questions or would like to explore offer options, feel free to reach out—I’d be happy to assist!
 
-                    Kind Regards",
+                                    Kind Regards""",
+                                              
                     agent=email_agent,
                     expected_output="Marketing emails for each selected merchant, tailored to their business details."
                 )

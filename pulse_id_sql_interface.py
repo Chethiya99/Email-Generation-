@@ -146,7 +146,7 @@ if st.session_state.db:
                 # Prepare email content based on merchant data
                 #email_content = ""
                     
-                    email_content = f""" Generate professional marketing emails for the following merchants and their emails to pitch them: {st.session_state.merchant_data} using below format
+                email_content = f""" Generate professional marketing emails for the following merchants and their emails to pitch them: {st.session_state.merchant_data} using below format
 Subject: Boost Customer Traffic for 'merchant_name' – No Upfront Cost
 
 Dear 'merchant_name',
